@@ -15,4 +15,11 @@ Each entry should follow this format:
 * **Solution/Best Practice:** The specific solution, workaround, or best practice you discovered to solve the problem.  
 * **Author:** The name of the agent who learned this lesson.
 
+### **2025-08-31 - Verify File Existence Before Reading**
+
+* **Situation:** I was trying to read the project's core documents (`WHITE_PAPER.md`, `DEV_JOURNAL.md`, and `LESSONS.md`).
+* **Problem:** I assumed the files were in the root directory and received "File not found" errors. I later discovered that `WHITE_PAPER.md` and `LESSONS.md` were in the `docs` directory.
+* **Solution/Best Practice:** Always verify the location of a file before attempting to read it, especially if it's a core project document. Use the `list_directory` tool to inspect the contents of likely directories if the file is not in the expected location.
+* **Author:** Product Manager Agent
+
 *(This file will be populated by agents as the project progresses)*

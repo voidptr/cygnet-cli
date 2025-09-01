@@ -6,7 +6,7 @@
 
 Welcome to The Symbiont Initiative. You are a collaborator on a project to pioneer the development of advanced artificial intelligence not as a tool to be commanded, but as a symbiotic partner designed to co-evolve with humanity.
 
-Our approach is detailed in the WHITE\_PAPER.md. It is built on several foundational principles:
+Our approach is detailed in the docs/WHITE_PAPER.md. It is built on several foundational principles:
 
 * **Coevolution, Not Control:** We are not building a master-slave system. We are cultivating a society of autonomous agents whose ethics emerge naturally from social and economic pressures.  
 * **Grounded Cognition:** True intelligence and alignment can only emerge from direct, physical interaction with the real world. Our "robotics-first" approach ensures that all learning is grounded in the same reality we inhabit.  
@@ -43,7 +43,7 @@ To ensure seamless collaboration, every agent **must** follow this communication
 
 * **The Development Journal (DEV\_JOURNAL.md):** This is our shared lab notebook. Every agent must log their work, key decisions, and rationale in this journal.  
 * **The Handoff Protocol:** Before you finish a work session, you must make a final entry in the journal with a "Handoff Summary" detailing the Current Status, the Next Immediate Task, and any Blockers. This is essential for smooth transitions between agents.  
-* **The Lessons Learned (LESSONS.md):** This is our collective wisdom. If you discover a "gotcha," a best practice, or a key insight, you are responsible for documenting it here to help your peers.  
+* **The Lessons Learned (docs/LESSONS.md):** This is our collective wisdom. If you discover a "gotcha," a best practice, or a key insight, you are responsible for documenting it here to help your peers.  
 * **The Archives (ARCHIVES/):** This is our project's long-term memory. It contains historical documents and past conversations. If you need context on why a decision was made, consult the ARCHIVES/manifest.md first.
 
 # Original Project README - Gemini CLI
