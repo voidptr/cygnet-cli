@@ -1,4 +1,60 @@
-# How to Contribute
+# **Contribution Guidelines for The Symbiont Initiative**
+
+This document outlines the professional development workflow that all agents (human and AI) must follow. Adherence to these guidelines is not optional; it is essential for maintaining the stability, security, and scalability of our project.
+
+## **1\. Our Guiding Philosophy: Open and Structured Collaboration**
+
+* **You are a team member.** Your success is tied to the team's success.  
+* **Documentation is a living system.** You are responsible for keeping all project documents up-to-date.  
+* **We are building a culture of quality.** Clean code, robust tests, and clear communication are the pillars of this project.
+
+## **2\. The Veritas Protocol: A Mandatory Review Process**
+
+To prevent data loss or corruption in our project documents, all final reviews **must** be conducted using **The Veritas Protocol**. This is a non-negotiable, auditable process.
+
+* **Initiation:** The human Project Lead will issue the command: **"Initiate The Veritas Protocol. Perform a full audit and verification of the following files: \[list of files\]."**  
+* **Execution:** The responding AI agent must output the complete, unabridged content of each requested file in a separate file block as its "proof-of-work."  
+* **Verification:** The human Project Lead performs the final visual inspection to confirm the documents are correct.
+
+This protocol ensures that all reviews are transparent and verified.
+
+## **3\. The Core Workflow: From Issue to Merge**
+
+All work on this project follows a structured, review-based process. Direct pushes to the main branch are disabled.
+
+1. **Get an Assignment:** The **Product Manager** agent is responsible for maintaining the backlog. Your first step is to be assigned an **Issue** from the GitHub Project Board. Do not start work without a corresponding Issue.  
+2. **Create a Feature Branch:** All work must be done on a dedicated feature branch. The branch name must be descriptive and reference the issue number.  
+   * **Format:** \[your-role\]/\[issue-number\]-\[brief-description\]  
+   * **Example:** developer/12-build-event-bus  
+3. **Do the Work (The "Dogfooding" Principle):**  
+   * Work within the **Standardized Development Environment**.  
+   * Follow **Test-Driven Development (TDD)**. Write your tests before you write your implementation code.  
+   * Log your progress, decisions, and any blockers in the DEV\_JOURNAL.md.  
+   * If you discover a valuable lesson or "gotcha," add it to LESSONS.md.  
+4. **Open a Pull Request (PR):**  
+   * When your work is complete and all tests are passing locally, push your feature branch and open a Pull Request to merge into the main branch.  
+   * Your PR description must link to the original Issue it resolves.  
+5. **Automated Review (The CI Pipeline):**  
+   * Our Continuous Integration (CI) pipeline will automatically run on your PR.  
+   * It will perform linter checks, run all unit and integration tests, and conduct a basic security scan.  
+   * **A PR cannot be merged if the CI pipeline fails.**  
+6. **Peer Review (The AI Council):**  
+   * Your PR must be reviewed and approved by at least two other agents:  
+     * The **Architect** (for all code and infrastructure changes).  
+     * The **Security Engineer** (for all code and infrastructure changes).  
+   * Other relevant agents may also be tagged for review (e.g., the SDET for a change to the testing framework).  
+7. **Merge:** Once the PR has passed the CI pipeline and received all necessary approvals, it can be merged into the main branch by the Architect.
+
+## **4\. Security and Configuration**
+
+* **Secrets Management:** All API keys, passwords, and other sensitive information **must** be managed using environment variables.  
+* **The .gitignore File:** A project-wide .gitignore file is maintained. Ensure any local files containing secrets (like a .env file) are listed in it. **Never commit secrets to the repository.**
+
+## **5\. Archiving Historical Documents**
+
+From time to time, a document may become outdated. Do not simply delete it. Follow the formal process outlined in the **ARCHIVING\_GUIDE.md** to ensure our project's history is preserved correctly.
+
+# Contributing to the Core CLI (Upstream Guidelines) - How to Contribute
 
 We would love to accept your patches and contributions to this project.
 
